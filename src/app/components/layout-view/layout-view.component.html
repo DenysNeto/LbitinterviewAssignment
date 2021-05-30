@@ -1,0 +1,25 @@
+<div>
+<div class="wrapper" >
+<h1>Layout  Screen</h1>
+<mat-divider></mat-divider>
+
+ <div fxLayout="row wrap" 
+ fxLayout.lt-sm="column" 
+ fxLayoutGap="32px" 
+
+ fxLayoutAlign="flex-start" >
+    <mat-card  fxFlex="0 1 calc(33.3% - 32px)"
+    fxFlex.lt-md="0 1 calc(50% - 32px)"
+    fxFlex.lt-sm="100%"  *ngFor="let template of  svgService.templates$ | async "   (click)="open(template.id)"   class="card" >
+        <mat-card-header>
+            <mat-card-title>ID : {{template.id}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <img   class="svg-container" *ngIf="template.imgSource" alt="template thubnail" [src]='template.imgSource | safeResourceUrl '>
+        </mat-card-content>
+      </mat-card>
+ </div>
+ </div>
+</div>
+
+

@@ -1,0 +1,30 @@
+.svg-container {
+    border: 1px dashed #000;
+    background-color: #CCC;
+    min-width: 12rem;
+    min-height: 11rem; 
+    max-width: 90rem;
+    max-height: 90rem;
+}
+
+.card{
+    color: blueviolet;
+    cursor: pointer;
+    margin: 1rem 1rem 0rem 0rem;
+}
+
+.card:hover {
+    opacity:.8
+}
+
+.img-thubnail {
+    min-width: 10rem;
+    min-height: 10rem; 
+    max-width: 90rem;
+    max-height: 90rem;
+    user-select: none;
+    -webkit-user-drag: none;
+    object-fit: contain
+}
+
+

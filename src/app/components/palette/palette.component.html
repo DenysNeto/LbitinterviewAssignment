@@ -1,0 +1,94 @@
+<div style="display:flex; height: 75vh; margin-top: 1rem;">
+    <mat-accordion class="palette" multi>
+        <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+            CIRCLES
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="items-container">
+            <div appDraggable  class="palette-item" >
+                <svg height="100" width="100">
+                    <circle  palleteItem="" id="circle-red" cx="50" cy="50" r="40" stroke="black" fill="red" />
+                </svg>
+            </div>
+            <div appDraggable class="palette-item"  >
+                <svg height="100" width="100">
+                    <circle palleteItem="" id="circle-blue" cx="50" cy="50" r="40" stroke="black" fill="blue" />
+                </svg>
+            </div>
+            <div appDraggable class="palette-item"  >
+                <svg height="100" width="100">
+                    <circle palleteItem=""  id="circle-green" cx="50" cy="50" r="40" stroke="black" fill="green" />
+                </svg>
+            </div>
+        </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+                RECTANGLES
+            </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="items-container">
+                <div appDraggable  class="palette-item" >
+                    <svg height="100" width="100">
+                        <rect palleteItem=""  id="rectangle-red" x="0" y="0" stroke="black"  width="100" height="100" fill="red"  />
+                    </svg>
+                </div>
+                <div appDraggable class="palette-item"  >
+                    <svg height="100" width="100">
+                        <rect palleteItem=""  id="rectangle-blue" x="0" y="0"  stroke="black"  width="100" height="100" fill="blue"  />
+                    </svg>
+                </div>
+                <div appDraggable class="palette-item"  >
+                    <svg height="100" width="100">
+                        <rect palleteItem=""  id="rectangle-green" x="0" y="0"  stroke="black"  width="100" height="100"  fill="green" />
+                    </svg>
+                </div>
+
+            </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+                ELLIPSE
+            </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="items-container">
+
+            <div appDraggable  class="palette-item" >
+                <svg height="140" width="400">
+                    <ellipse palleteItem="" id="ellipse-red" cx="200" stroke="black"  cy="80" rx="100" ry="50" fill="red" />
+                    Sorry, your browser does not support inline SVG.  
+                </svg>
+            </div>
+
+            <div appDraggable class="palette-item"  >
+                <svg height="140" width="400">
+                    <ellipse palleteItem="" id="ellipse-blue" cx="200" stroke="black"  cy="80" rx="100" ry="50" fill="blue" />
+                    Sorry, your browser does not support inline SVG.  
+                </svg>
+            </div>
+
+            <div appDraggable  class="palette-item" >
+                <svg height="140" width="400">
+                    <ellipse palleteItem="" id="ellipse-green" cx="200"  stroke="black"  cy="80" rx="100" ry="50" fill="green" />
+                    Sorry, your browser does not support inline SVG.  
+                </svg>
+            </div>
+
+        
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+<div width="100%" height="100%"  id="dropzone-container" class="svg-container" appDroppable>
+    <svg  width="100%" height="100%" #dropzone id="dropzone"  style="background-color: #CCC" >
+    </svg>
+</div>
+</div>
+
